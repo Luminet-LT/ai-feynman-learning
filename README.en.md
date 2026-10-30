@@ -67,6 +67,8 @@ Exercises default to three four-option multiple-choice questions plus one open-e
 
 ## Installation
 
+Run git clone for a first-time installation. Run the corresponding git -C ... pull command to update an existing installation.
+
 ### Codex
 
 Clone the repository into the Codex user skills directory:
@@ -93,9 +95,74 @@ git -C ~/.codex/skills/feynman-learning pull
 
 After installation, invoke the skill in Codex with `$feynman-learning`. If it does not appear immediately, reload or restart Codex.
 
+### DSH (DeepSeek Harness)
+
+DSH loads skills from `~/.dsh/skills` by default:
+
+```powershell
+# Windows PowerShell
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git "$HOME\.dsh\skills\feynman-learning"
+git -C "$HOME\.dsh\skills\feynman-learning" pull
+```
+
+```bash
+# macOS / Linux
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git ~/.dsh/skills/feynman-learning
+git -C ~/.dsh/skills/feynman-learning pull
+```
+
+### Claude Code
+
+Claude Code loads global skills from `~/.claude/skills`:
+
+```powershell
+# Windows PowerShell
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git "$HOME\.claude\skills\feynman-learning"
+git -C "$HOME\.claude\skills\feynman-learning" pull
+```
+
+```bash
+# macOS / Linux
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git ~/.claude/skills/feynman-learning
+git -C ~/.claude/skills/feynman-learning pull
+```
+
+After reloading Claude Code, invoke the skill with `/feynman-learning`.
+
+### OpenCode
+
+OpenCode loads global skills from `~/.config/opencode/skills` and also recognizes Claude Code-compatible skill directories:
+
+```powershell
+# Windows PowerShell
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git "$HOME\.config\opencode\skills\feynman-learning"
+git -C "$HOME\.config\opencode\skills\feynman-learning" pull
+```
+
+```bash
+# macOS / Linux
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git ~/.config/opencode/skills/feynman-learning
+git -C ~/.config/opencode/skills/feynman-learning pull
+```
+
 ### Other Agents
 
-Copy the entire directory into the target agent's user skills directory and make sure `SKILL.md` is at the skill root. If the platform does not natively support Codex skills, use `SKILL.md` as a system prompt or workflow specification.
+Agents that support Agent Skills / `SKILL.md` can clone the repository into their user skills directory. Ensure that `SKILL.md` is at the skill root:
+
+```powershell
+# Windows PowerShell: replace <agent-skills-dir> with the target agent's directory
+$skillsDir = "$HOME\.<agent-skills-dir>\skills"
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git "$skillsDir\feynman-learning"
+git -C "$skillsDir\feynman-learning" pull
+```
+
+```bash
+# macOS / Linux: replace <agent-skills-dir> with the target agent's directory
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git ~/.<agent-skills-dir>/skills/feynman-learning
+git -C ~/.<agent-skills-dir>/skills/feynman-learning pull
+```
+
+For platforms without native Agent Skills support, use `SKILL.md` as a system prompt or workflow specification.
 
 ## Usage Examples
 

@@ -67,6 +67,8 @@
 
 ## 安装
 
+首次安装执行 git clone；已安装后执行对应的 git -C ... pull 命令更新。
+
 ### Codex
 
 将仓库克隆到 Codex 的用户技能目录：
@@ -93,9 +95,74 @@ git -C ~/.codex/skills/feynman-learning pull
 
 安装后，在 Codex 中使用 `$feynman-learning` 调用该技能。若未立即出现，请重新加载或重启 Codex。
 
+### DSH (DeepSeek Harness)
+
+DSH 默认从 `~/.dsh/skills` 读取技能：
+
+```powershell
+# Windows PowerShell
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git "$HOME\.dsh\skills\feynman-learning"
+git -C "$HOME\.dsh\skills\feynman-learning" pull
+```
+
+```bash
+# macOS / Linux
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git ~/.dsh/skills/feynman-learning
+git -C ~/.dsh/skills/feynman-learning pull
+```
+
+### Claude Code
+
+Claude Code 从 `~/.claude/skills` 读取全局技能：
+
+```powershell
+# Windows PowerShell
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git "$HOME\.claude\skills\feynman-learning"
+git -C "$HOME\.claude\skills\feynman-learning" pull
+```
+
+```bash
+# macOS / Linux
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git ~/.claude/skills/feynman-learning
+git -C ~/.claude/skills/feynman-learning pull
+```
+
+重新加载 Claude Code 后，可通过 `/feynman-learning` 调用。
+
+### OpenCode
+
+OpenCode 从 `~/.config/opencode/skills` 读取全局技能，也会识别 Claude Code 的兼容目录：
+
+```powershell
+# Windows PowerShell
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git "$HOME\.config\opencode\skills\feynman-learning"
+git -C "$HOME\.config\opencode\skills\feynman-learning" pull
+```
+
+```bash
+# macOS / Linux
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git ~/.config/opencode/skills/feynman-learning
+git -C ~/.config/opencode/skills/feynman-learning pull
+```
+
 ### 其他 Agent
 
-将整个目录复制到对应 Agent 的用户技能目录，并确保 `SKILL.md` 位于技能根目录。其他平台并非原生支持 Codex 技能格式时，可将 `SKILL.md` 作为系统提示或工作流规范使用。
+其他支持 Agent Skills / `SKILL.md` 的工具，可将整个目录克隆到其用户技能目录，并确保 `SKILL.md` 位于技能根目录：
+
+```powershell
+# Windows PowerShell：将 <agent-skills-dir> 替换为目标 Agent 的技能目录
+$skillsDir = "$HOME\.<agent-skills-dir>\skills"
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git "$skillsDir\feynman-learning"
+git -C "$skillsDir\feynman-learning" pull
+```
+
+```bash
+# macOS / Linux：将 <agent-skills-dir> 替换为目标 Agent 的技能目录
+git clone https://github.com/Luminet-LT/ai-feynman-learning.git ~/.<agent-skills-dir>/skills/feynman-learning
+git -C ~/.<agent-skills-dir>/skills/feynman-learning pull
+```
+
+不支持 Agent Skills 的平台，可将 `SKILL.md` 作为系统提示或工作流规范使用。
 
 ## 使用示例
 
