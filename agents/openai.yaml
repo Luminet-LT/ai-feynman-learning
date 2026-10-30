@@ -1,0 +1,4 @@
+interface:
+  display_name: "费曼学习教练"
+  short_description: "先做初步 AI 调研，再根据发现进行针对性访谈并锁定目标；确认资料后生成可编辑调研报告、课程大纲与课程结构，首章讲义完成后即可开始学习，后续逐章生成。讲义采用 10 模块，练习与费曼输出由 AI 评价并保存。"
+  default_prompt: "Use $feynman-learning to build a course in the platform’s current order: run preliminary AI research, ask me targeted interview questions based on the findings, lock the learning goal, collect and confirm readable sources, generate an editable research report, confirm it to produce the course outline and structure, generate only the first chapter, and then let me start learning while later chapters unlock one by one. Use the 10-module lecture structure and save completed exercises, Feynman outputs, feedback, and review records."
