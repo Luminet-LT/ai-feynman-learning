@@ -32,17 +32,11 @@ Core principle: **If you cannot explain it simply to a layperson, you do not und
 | Feynman deep-dive mode | Test genuine understanding through explanation, examples, and changed conditions |
 | File-vault mode | Export a Markdown or Obsidian offline knowledge base |
 
-## Visual Preview
-
-These images also test PNG rendering, repository-relative paths, table layout, and responsive scaling in GitHub Markdown.
-
-| Seven-stage workflow | 10-module lecture |
-| :---: | :---: |
-| [![Seven-stage course workflow](assets/images/workflow.png)](assets/images/workflow.png) | [![10-module lecture standard](assets/images/ten-modules.png)](assets/images/ten-modules.png) |
-
 ## Course Workflow
 
 Course creation follows a fixed seven-stage workflow. Steps may not be skipped:
+
+![Seven-stage course workflow](assets/images/workflow.png)
 
 1. **Preliminary AI research**: Learn how the subject is currently taught, then form hypotheses about key points, difficulties, and interview questions.
 2. **Targeted interview and goal lock**: Confirm the target depth, measurable outcome, schedule, and available study time.
@@ -55,6 +49,8 @@ Course creation follows a fixed seven-stage workflow. Steps may not be skipped:
 ## The 10-Module Lecture
 
 Every lecture section must include:
+
+![10-module lecture structure](assets/images/ten-modules.png)
 
 1. Learning navigation
 2. Pre-class retrieval

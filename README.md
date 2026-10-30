@@ -32,17 +32,11 @@
 | 费曼深入模式 | 用讲解、举例和换条件验证真正理解一个概念 |
 | 文件库模式 | 导出为 Markdown 或 Obsidian 离线知识库 |
 
-## 项目预览
-
-以下测试图片用于验证 GitHub Markdown 中 PNG 渲染、仓库相对路径、表格排版和响应式缩放是否正常。
-
-| 七阶段课程流程 | 10 模块讲义 |
-| :---: | :---: |
-| [![七阶段课程流程](assets/images/workflow.png)](assets/images/workflow.png) | [![10 模块讲义](assets/images/ten-modules.png)](assets/images/ten-modules.png) |
-
 ## 课程流程
 
 课程创建遵循固定的七阶段流程，不允许跳步：
+
+![七阶段课程流程](assets/images/workflow.png)
 
 1. **初步 AI 调研**：先了解市场上如何教，形成重点、难点假设和访谈问题。
 2. **针对性访谈与目标锁定**：确认终点深度、可验收成果、周期和投入。
@@ -55,6 +49,8 @@
 ## 10 模块讲义
 
 每节讲义都必须包含：
+
+![10 模块讲义结构](assets/images/ten-modules.png)
 
 1. 学习导航
 2. 课前检索
