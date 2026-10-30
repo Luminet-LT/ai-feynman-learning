@@ -1,5 +1,7 @@
 # AI Feynman Learning
 
+**简体中文** | [English](README.en.md)
+
 > 一套面向 AI Agent 的费曼学习法技能：先调研，再访谈锁目标；确认资料与报告后生成课程，逐章学习，并用练习、费曼输出和间隔复习验证真实掌握。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -123,6 +125,7 @@ git -C ~/.codex/skills/feynman-learning pull
 │   └── obsidian-vault.md       # 离线知识库结构
 ├── CONTRIBUTING.md
 ├── LICENSE
+├── README.en.md
 └── README.md
 ```
 
