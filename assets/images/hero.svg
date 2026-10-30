@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f1e6"/>
+      <stop offset="1" stop-color="#e9f1ee"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#14213d" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#14213d" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f26b38"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="720" fill="url(#bg)"/>
+  <rect width="1600" height="720" fill="url(#grid)"/>
+  <circle cx="1480" cy="70" r="150" fill="#d8f36b" opacity="0.85"/>
+  <circle cx="1430" cy="660" r="110" fill="#76c7c0" opacity="0.45"/>
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif">
+    <g transform="translate(92 84)">
+      <rect width="250" height="42" rx="21" fill="#14213d"/>
+      <circle cx="23" cy="21" r="6" fill="#d8f36b"/>
+      <text x="42" y="27" fill="#ffffff" font-size="16" font-weight="700" letter-spacing="2">OPEN SOURCE SKILL</text>
+    </g>
+    <text x="92" y="250" fill="#14213d" font-size="86" font-weight="800" letter-spacing="-3">AI FEYNMAN</text>
+    <text x="92" y="340" fill="#14213d" font-size="86" font-weight="800" letter-spacing="-3">LEARNING</text>
+    <rect x="94" y="376" width="492" height="10" rx="5" fill="#f26b38"/>
+    <text x="94" y="445" fill="#40506f" font-size="26" font-weight="500">Research. Interview. Learn. Explain. Verify.</text>
+    <text x="94" y="492" fill="#40506f" font-size="22">A course-building protocol for AI agents that refuses to confuse</text>
+    <text x="94" y="528" fill="#14213d" font-size="22" font-weight="700">“I read it” with “I can teach it.”</text>
+    <g transform="translate(81 585)">
+      <rect width="150" height="48" rx="24" fill="#ffffff" stroke="#14213d" stroke-width="2"/>
+      <text x="75" y="31" text-anchor="middle" fill="#14213d" font-size="16" font-weight="700">MIT LICENSE</text>
+      <rect x="170" width="175" height="48" rx="24" fill="#f26b38"/>
+      <text x="257" y="31" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">10 MODULES</text>
+      <rect x="365" width="160" height="48" rx="24" fill="#d8f36b"/>
+      <text x="445" y="31" text-anchor="middle" fill="#14213d" font-size="16" font-weight="700">7 STAGES</text>
+    </g>
+    <g transform="translate(970 126)" filter="url(#shadow)">
+      <circle cx="285" cy="255" r="236" fill="#14213d"/>
+      <circle cx="285" cy="255" r="194" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2" stroke-dasharray="8 10"/>
+      <circle cx="285" cy="255" r="135" fill="#f26b38"/>
+      <path d="M285 28 A227 227 0 0 1 512 255" fill="none" stroke="#d8f36b" stroke-width="6" marker-end="url(#arrow)"/>
+      <path d="M285 482 A227 227 0 0 1 58 255" fill="none" stroke="#76c7c0" stroke-width="6" marker-end="url(#arrow)"/>
+      <text x="285" y="239" text-anchor="middle" fill="#ffffff" font-size="31" font-weight="800" letter-spacing="1">EXPLAIN</text>
+      <text x="285" y="281" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="500">it simply.</text>
+      <g>
+        <circle cx="285" cy="19" r="44" fill="#d8f36b"/>
+        <text x="285" y="26" text-anchor="middle" fill="#14213d" font-size="16" font-weight="800">RESEARCH</text>
+      </g>
+      <g>
+        <circle cx="527" cy="255" r="44" fill="#76c7c0"/>
+        <text x="527" y="262" text-anchor="middle" fill="#14213d" font-size="16" font-weight="800">LEARN</text>
+      </g>
+      <g>
+        <circle cx="285" cy="491" r="44" fill="#f7f1e6"/>
+        <text x="285" y="498" text-anchor="middle" fill="#14213d" font-size="16" font-weight="800">VERIFY</text>
+      </g>
+      <g>
+        <circle cx="43" cy="255" r="44" fill="#f26b38"/>
+        <text x="43" y="262" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="800">TEACH</text>
+      </g>
+    </g>
+    <text x="92" y="684" fill="#6c7890" font-size="15" letter-spacing="1">AI FEYNMAN LEARNING · TEACH LESS, VERIFY MORE</text>
+  </g>
+</svg>

@@ -6,6 +6,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+![AI Feynman Learning 项目封面](assets/images/hero.png)
+
 ## 这是什么
 
 本仓库是一个可直接安装到 Codex 等支持 `SKILL.md` 的 AI Agent 中的技能包。它不是独立的 Web 应用，而是一套可执行的课程设计与教学协议，规定 Agent 如何：
@@ -29,6 +31,14 @@
 | 资源规划模式 | 筛选最高价值的学习资源 |
 | 费曼深入模式 | 用讲解、举例和换条件验证真正理解一个概念 |
 | 文件库模式 | 导出为 Markdown 或 Obsidian 离线知识库 |
+
+## 项目预览
+
+以下测试图片用于验证 GitHub Markdown 中 PNG 渲染、仓库相对路径、表格排版和响应式缩放是否正常。
+
+| 七阶段课程流程 | 10 模块讲义 |
+| :---: | :---: |
+| [![七阶段课程流程](assets/images/workflow.png)](assets/images/workflow.png) | [![10 模块讲义](assets/images/ten-modules.png)](assets/images/ten-modules.png) |
 
 ## 课程流程
 
@@ -117,7 +127,8 @@ git -C ~/.codex/skills/feynman-learning pull
 ├── agents/
 │   └── openai.yaml             # Agent 界面元数据与默认提示词
 ├── assets/
-│   └── course-template.md      # 课程文件模板
+│   ├── course-template.md      # 课程文件模板
+│   └── images/                 # 封面、流程图与 10 模块图（SVG + PNG）
 ├── references/
 │   ├── depth-spec.md           # 深度与质量规格
 │   ├── levels.md               # 级别、掌握程度与评价标准

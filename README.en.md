@@ -6,6 +6,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+![AI Feynman Learning project cover](assets/images/hero.png)
+
 ## What This Is
 
 This repository is a skill package that can be installed into Codex and other AI agents that support `SKILL.md`. It is not a standalone web application. It is an executable course-design and teaching protocol that tells an agent how to:
@@ -29,6 +31,14 @@ Core principle: **If you cannot explain it simply to a layperson, you do not und
 | Resource-planning mode | Select the highest-value learning resources |
 | Feynman deep-dive mode | Test genuine understanding through explanation, examples, and changed conditions |
 | File-vault mode | Export a Markdown or Obsidian offline knowledge base |
+
+## Visual Preview
+
+These images also test PNG rendering, repository-relative paths, table layout, and responsive scaling in GitHub Markdown.
+
+| Seven-stage workflow | 10-module lecture |
+| :---: | :---: |
+| [![Seven-stage course workflow](assets/images/workflow.png)](assets/images/workflow.png) | [![10-module lecture standard](assets/images/ten-modules.png)](assets/images/ten-modules.png) |
 
 ## Course Workflow
 
@@ -117,7 +127,8 @@ Use $feynman-learning to export my course as an Obsidian knowledge base.
 ├── agents/
 │   └── openai.yaml             # Agent interface metadata and default prompt
 ├── assets/
-│   └── course-template.md      # Course file template
+│   ├── course-template.md      # Course file template
+│   └── images/                 # Cover, workflow and 10-module diagrams (SVG + PNG)
 ├── references/
 │   ├── depth-spec.md           # Depth and quality specification
 │   ├── levels.md               # Levels, mastery, and evaluation criteria

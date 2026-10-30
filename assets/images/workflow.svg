@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#14213d" opacity="0.11"/>
+    </pattern>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#14213d" flood-opacity="0.11"/>
+    </filter>
+    <marker id="orangeArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f26b38"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#f7f1e6"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <circle cx="80" cy="78" r="76" fill="#d8f36b"/>
+  <circle cx="1510" cy="114" r="104" fill="#f26b38" opacity="0.14"/>
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif">
+    <text x="80" y="100" fill="#f26b38" font-size="18" font-weight="800" letter-spacing="3">COURSE ENGINE</text>
+    <text x="80" y="166" fill="#14213d" font-size="58" font-weight="800" letter-spacing="-2">Seven stages. No shortcuts.</text>
+    <text x="80" y="205" fill="#5c6982" font-size="21">A sequence designed to turn a vague learning request into a teachable, testable course.</text>
+
+    <g filter="url(#cardShadow)">
+      <g transform="translate(70 265)">
+        <rect width="300" height="175" rx="22" fill="#ffffff" stroke="#14213d" stroke-width="2"/>
+        <rect width="300" height="9" rx="4" fill="#f26b38"/>
+        <circle cx="48" cy="58" r="27" fill="#14213d"/>
+        <text x="48" y="65" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="800">01</text>
+        <text x="92" y="55" fill="#14213d" font-size="19" font-weight="800">RESEARCH</text>
+        <text x="92" y="82" fill="#6c7890" font-size="15">Read real courses first.</text>
+        <text x="34" y="128" fill="#40506f" font-size="16">Find common structures,</text>
+        <text x="34" y="151" fill="#40506f" font-size="16">difficulties and blind spots.</text>
+      </g>
+      <g transform="translate(435 265)">
+        <rect width="300" height="175" rx="22" fill="#ffffff" stroke="#14213d" stroke-width="2"/>
+        <rect width="300" height="9" rx="4" fill="#76c7c0"/>
+        <circle cx="48" cy="58" r="27" fill="#14213d"/>
+        <text x="48" y="65" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="800">02</text>
+        <text x="92" y="55" fill="#14213d" font-size="19" font-weight="800">INTERVIEW</text>
+        <text x="92" y="82" fill="#6c7890" font-size="15">Lock the real goal.</text>
+        <text x="34" y="128" fill="#40506f" font-size="16">Ask one targeted question</text>
+        <text x="34" y="151" fill="#40506f" font-size="16">at a time. Confirm outcomes.</text>
+      </g>
+      <g transform="translate(800 265)">
+        <rect width="300" height="175" rx="22" fill="#ffffff" stroke="#14213d" stroke-width="2"/>
+        <rect width="300" height="9" rx="4" fill="#d8f36b"/>
+        <circle cx="48" cy="58" r="27" fill="#14213d"/>
+        <text x="48" y="65" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="800">03</text>
+        <text x="92" y="55" fill="#14213d" font-size="19" font-weight="800">SOURCES</text>
+        <text x="92" y="82" fill="#6c7890" font-size="15">Keep evidence readable.</text>
+        <text x="34" y="128" fill="#40506f" font-size="16">Separate automatic sources</text>
+        <text x="34" y="151" fill="#40506f" font-size="16">from user materials.</text>
+      </g>
+      <g transform="translate(1165 265)">
+        <rect width="300" height="175" rx="22" fill="#ffffff" stroke="#14213d" stroke-width="2"/>
+        <rect width="300" height="9" rx="4" fill="#f26b38"/>
+        <circle cx="48" cy="58" r="27" fill="#14213d"/>
+        <text x="48" y="65" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="800">04</text>
+        <text x="92" y="55" fill="#14213d" font-size="19" font-weight="800">REPORT</text>
+        <text x="92" y="82" fill="#6c7890" font-size="15">Make findings editable.</text>
+        <text x="34" y="128" fill="#40506f" font-size="16">Show evidence, limits,</text>
+        <text x="34" y="151" fill="#40506f" font-size="16">projects and recommendations.</text>
+      </g>
+      <g transform="translate(250 535)">
+        <rect width="300" height="175" rx="22" fill="#ffffff" stroke="#14213d" stroke-width="2"/>
+        <rect width="300" height="9" rx="4" fill="#76c7c0"/>
+        <circle cx="48" cy="58" r="27" fill="#14213d"/>
+        <text x="48" y="65" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="800">05</text>
+        <text x="92" y="55" fill="#14213d" font-size="19" font-weight="800">OUTLINE</text>
+        <text x="92" y="82" fill="#6c7890" font-size="15">Build the full map.</text>
+        <text x="34" y="128" fill="#40506f" font-size="16">Create levels, chapters and</text>
+        <text x="34" y="151" fill="#40506f" font-size="16">continuous traceable IDs.</text>
+      </g>
+      <g transform="translate(615 535)">
+        <rect width="300" height="175" rx="22" fill="#ffffff" stroke="#14213d" stroke-width="2"/>
+        <rect width="300" height="9" rx="4" fill="#d8f36b"/>
+        <circle cx="48" cy="58" r="27" fill="#14213d"/>
+        <text x="48" y="65" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="800">06</text>
+        <text x="92" y="55" fill="#14213d" font-size="19" font-weight="800">FIRST CHAPTER</text>
+        <text x="92" y="82" fill="#6c7890" font-size="15">Start before it is “done.”</text>
+        <text x="34" y="128" fill="#40506f" font-size="16">Generate only chapter one,</text>
+        <text x="34" y="151" fill="#40506f" font-size="16">then let learning begin.</text>
+      </g>
+      <g transform="translate(980 535)">
+        <rect width="300" height="175" rx="22" fill="#ffffff" stroke="#14213d" stroke-width="2"/>
+        <rect width="300" height="9" rx="4" fill="#f26b38"/>
+        <circle cx="48" cy="58" r="27" fill="#14213d"/>
+        <text x="48" y="65" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="800">07</text>
+        <text x="92" y="55" fill="#14213d" font-size="19" font-weight="800">LEARN &amp; ADAPT</text>
+        <text x="92" y="82" fill="#6c7890" font-size="15">Evidence changes the path.</text>
+        <text x="34" y="128" fill="#40506f" font-size="16">Use exercises, explanations</text>
+        <text x="34" y="151" fill="#40506f" font-size="16">and review to adjust pacing.</text>
+      </g>
+    </g>
+
+    <path d="M370 353 H435" stroke="#f26b38" stroke-width="4" marker-end="url(#orangeArrow)"/>
+    <path d="M735 353 H800" stroke="#f26b38" stroke-width="4" marker-end="url(#orangeArrow)"/>
+    <path d="M1100 353 H1165" stroke="#f26b38" stroke-width="4" marker-end="url(#orangeArrow)"/>
+    <path d="M1315 440 V486 Q1315 505 1296 505 H434 Q420 505 420 519 V535" fill="none" stroke="#f26b38" stroke-width="4" marker-end="url(#orangeArrow)"/>
+    <path d="M550 623 H615" stroke="#f26b38" stroke-width="4" marker-end="url(#orangeArrow)"/>
+    <path d="M915 623 H980" stroke="#f26b38" stroke-width="4" marker-end="url(#orangeArrow)"/>
+
+    <g transform="translate(80 785)">
+      <rect width="1440" height="66" rx="18" fill="#14213d"/>
+      <text x="34" y="41" fill="#d8f36b" font-size="17" font-weight="800" letter-spacing="2">QUALITY GATE</text>
+      <text x="220" y="41" fill="#ffffff" font-size="18">No skipped stages. No invented sources. No mastery based on “I finished reading.”</text>
+    </g>
+  </g>
+</svg>
