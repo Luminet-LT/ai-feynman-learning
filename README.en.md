@@ -52,16 +52,16 @@ Every lecture section must include:
 
 ![10-module lecture structure](assets/images/ten-modules.png)
 
-1. Learning navigation
-2. Pre-class retrieval
-3. Problem context
-4. Concept construction
-5. Complete worked demonstration
-6. Faded practice
-7. Variations and error diagnosis
-8. Retrieval practice
-9. Feynman explanation
-10. Summary, transfer, and review
+1. **Learning navigation**: State the estimated time, observable goal, prerequisites, target mastery level, and the standard for success.
+2. **Pre-class retrieval**: Recall prior knowledge without reviewing the explanation first. Use at least two prompts; gaps or mistakes reveal what this section must address.
+3. **Problem context**: Introduce the core question through a real scenario and surface common wrong intuitions, so the learner understands why the topic matters and what problem it solves.
+4. **Concept construction**: Move from a plain-language definition to a formal one, explain why the concept is needed and how it works, then define its scope through boundaries and counterexamples.
+5. **Complete worked demonstration**: Make expert reasoning visible with at least three reasoning steps, a checking method, and two examples. Explain why each step is taken instead of giving answers only.
+6. **Faded practice**: Begin with steps and hints, then gradually remove the scaffolding until the learner can complete the task independently.
+7. **Variations and error diagnosis**: Use near- and far-transfer tasks to test flexible understanding; explain the cause, correction, and self-check method for common errors.
+8. **Retrieval practice**: Close the lecture and recall or answer from memory. Complete at least two self-test questions to strengthen learning through retrieval rather than rereading.
+9. **Feynman explanation**: Ask the learner to explain the idea to a layperson in their own words, covering the required elements. The AI first confirms what is correct, then identifies gaps, fills them, and asks a follow-up.
+10. **Summary, transfer, and review**: Compress the key points, connect them to prior and later knowledge, assign a real transfer task, and schedule review at 1, 3, 7, and 15 days.
 
 Exercises default to three four-option multiple-choice questions plus one open-ended question. After submission, the AI evaluates the answers and saves the response, feedback, gaps, and improvement suggestions.
 
