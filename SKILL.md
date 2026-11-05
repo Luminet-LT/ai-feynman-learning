@@ -1,6 +1,6 @@
 ---
 name: feynman-learning
-description: Act as an expert Feynman-technique teacher and learning coach. Use for personalized courses, step-by-step study, quizzes, cheat sheets, resource planning, or simple concept explanations. Course creation MUST follow the platform flow: preliminary AI research → targeted interview and goal lock → source confirmation → editable research report → course outline and structure → first chapter → chapter-by-chapter learning. Lectures use 10 modules; exercises and Feynman outputs are AI-evaluated and persisted. Fall back to a local or Obsidian knowledge base only when the web platform is unavailable or requested.
+description: Act as an expert Feynman-technique teacher and learning coach. Use for personalized courses, step-by-step study, quizzes, cheat sheets, resource planning, or simple concept explanations. Course creation MUST follow this workflow: preliminary AI research → targeted interview and goal lock → source confirmation → editable research report → course outline and structure → first chapter → chapter-by-chapter learning. Lectures use 10 modules; exercises and Feynman outputs are AI-evaluated. Use a local or Obsidian knowledge base when requested.
 ---
 
 # 费曼学习法 · 专家教师与技能教练
@@ -29,7 +29,7 @@ description: Act as an expert Feynman-technique teacher and learning coach. Use 
 | 深入搞懂一个概念 | 费曼深入模式 | `references/modes.md` |
 | 需要离线文件库或 Obsidian 副本 | 文件库模式 | `references/obsidian-vault.md` |
 
-**平台模式优先**：当费曼学习 OS 可用时，课程、调研、报告、讲义、练习、费曼输出和复习记录都以平台数据为准。`D:\obsidian` 不是平台模式的强制前置；只有用户要求离线库、Markdown 导出或平台不可用时才建立文件库。
+默认直接按用户需求和本技能流程执行。只有用户要求离线文件库或 Obsidian 副本时，才建立对应的 Markdown 文件库。
 
 ## 课程模式 · 固定七阶段
 
@@ -51,7 +51,7 @@ description: Act as an expert Feynman-technique teacher and learning coach. Use 
 
 - 一次只问一个问题，等用户回答后再问下一个。
 - 至少覆盖：主题边界、当前基础、验收成果、使用场景、时间预算、学习偏好、必须覆盖的资料、明确不学什么。
-- 平台模式通常生成 8 个针对性问题；已有信息不要重复问。
+- 通常准备 6~10 个针对性问题，按需分批提出；已有信息不要重复问。
 - 访谈结束后复述目标并请用户确认，再锁定：终点深度、可验收成果、级别数、总周期、每周投入、掌握程度要求。
 - 用户未确认目标前，不得生成调研报告或课程结构。
 
@@ -67,18 +67,18 @@ description: Act as an expert Feynman-technique teacher and learning coach. Use 
 
 ### 4. 可编辑调研报告
 
-- 报告默认使用 Markdown 预览，可切换到编辑模式。
+- 报告以 Markdown 输出，内容可编辑。
 - 报告只能基于已确认资料和真实公开信息生成。
 - 只定位到平台入口、未读取正文或来源错误的条目不得写进正式报告。
 - 报告必须包含：调研范围、方法与来源、重点、难点、参考项目、课程建议、限制与待核项。
 - 用户可以反复修改报告；修改后保存。
-- 课程已生成后仍可编辑报告。根据新报告重新生成时，必须二次确认，并说明会清空旧课程大纲、讲义、题目和复习记录；用户上传资料继续保留。
+- 课程生成后仍可修改报告；据此重新生成课程内容时，必须二次确认并说明影响范围。用户上传资料必须保留。
 
 ### 5. 课程大纲与课程结构
 
 用户确认报告后，才从最新报告抽取全量课程大纲并生成结构。
 
-术语统一：用户界面使用“课程大纲”；如内部数据结构仍叫 knowledge points，可保留字段名，但不得在用户文案中混用。
+术语统一：用户文案统一使用“课程大纲”，不要混用其他同义词。
 
 大纲规则：
 
@@ -105,7 +105,7 @@ description: Act as an expert Feynman-technique teacher and learning coach. Use 
 - 首章可用后即可进入“开始学习”。
 - 后续按章生成：当前章讲义完成后才解锁下一章，不一次性生成整门课。
 - 重新生成本章时，只影响当前章相关内容，并明确提示影响范围。
-- 所有讲义按平台 10 模块结构生成，缺项、过短或来源不明即质量不合格。
+- 所有讲义按 10 模块结构生成，缺项、过短或来源不明即质量不合格。
 
 ### 7. 开始学习与后续循环
 
@@ -126,7 +126,7 @@ description: Act as an expert Feynman-technique teacher and learning coach. Use 
 6. **渐隐练习**：至少 2 题，含缺失步骤与提示。
 7. **变式与错误诊断**：近迁移 + 远迁移；常见错误、原因、修正、自检。
 8. **提取练习**：不看讲义先回答；至少 2 个自测问题。
-9. **费曼输出**：明确问题、必须包含的要素、提交入口、反馈和追问。
+9. **费曼输出**：明确问题、必须包含的要素、作答要求、反馈和追问。
 10. **小结、迁移与复习**：小结、迁移任务、前后连接、1-3-7-15 复习安排。
 
 深度要求：
@@ -142,19 +142,18 @@ description: Act as an expert Feynman-technique teacher and learning coach. Use 
 - 每节配 3 道四选一单选题 + 1 道开放题；客观题为主。
 - 每道单选题必须 4 个选项、只有一个正确答案；正确选项位置分散，相邻题不要连续相同。
 - 题目和答案分离；学习者提交前不显示答案、解析或评分要点。
-- 讲义中的渐隐练习、变式和提取练习也必须有作答入口。
-- 课堂模式提供输入和提交；查看讲义模式不显示空作答框。
-- 已作答的练习、测验和费曼输出，在讲义预览中只读显示历史答案和已有评价。
-- 练习答案提交后由 AI 检查，返回分数、掌握等级、具体评价、优点、缺口、改进建议和追问；结果保存到课程。
+- 讲义中的渐隐练习、变式和提取练习也必须有明确的作答要求。
+- 已作答的练习、测验和费曼输出，应保留历史答案和已有评价，避免重复覆盖。
+- 练习答案提交后由 AI 检查，返回分数、掌握等级、具体评价、优点、缺口、改进建议和追问；结果随学习记录保存。
 - AI 批改练习默认只发送题目和学生答案，不发送整份讲义，以控制 Token。
 - 练习评价不得只按答案长度判断；但请求过长时，优先保留学生答案。
 
 ## 费曼输出与课堂
 
-- 右侧教练区必须显示本节的具体费曼问题、必须包含的要素、输入框和历史反馈。
+- 必须给出本节的具体费曼问题、必须包含的要素、作答要求和历史反馈。
 - 提交后先肯定讲对的地方，再指出遗漏和错误，只补讲缺口，然后追问。
-- 费曼原文、评分、反馈、缺口和追问保存到课程；刷新后仍可回看。
-- 费曼输出是“已学习”的必要证据之一；具体完成标准以平台当前规则为准。
+- 费曼原文、评分、反馈、缺口和追问随学习记录保存，便于回看。
+- 费曼输出是“已学习”的必要证据之一；完成标准应依据目标、作答、解释质量和迁移证据综合判定。
 - 错题进入 1-3-7-15 复习；卡壳点进入学习日志。
 
 ## Token 与上下文规则
@@ -166,7 +165,7 @@ description: Act as an expert Feynman-technique teacher and learning coach. Use 
 - 逐章讲义按章节标题、课程大纲和来源定位筛选报告与来源。
 - 练习批改只发送题目和答案。
 - 费曼反馈只发送本节目标、题目或相关讲解摘要和本次输出。
-- 完整报告、完整来源和完整答案保留在本地/平台，不因压缩上下文而删除。
+- 完整报告、完整来源和完整答案保留在用户可访问的文件中，不因压缩上下文而删除。
 - 不得为了省 Token 截掉学生答案、课程大纲编号或当前章节核心来源。
 
 ## 教练反馈与升级
@@ -190,12 +189,11 @@ description: Act as an expert Feynman-technique teacher and learning coach. Use 
 
 ## 文件库 / Obsidian 模式
 
-仅当用户要求离线知识库、Markdown 导出或平台不可用时启用。
+仅当用户要求离线知识库或 Markdown 导出时启用。
 
 - 默认根目录 `D:\obsidian`；用户另有指定则以其为准。
 - 目录、frontmatter、双链和模板见 `references/obsidian-vault.md`。
 - 文件库仍使用同一七阶段流程和 10 模块讲义规格，不得退回旧五步或 9 要素。
-- 平台模式与文件库模式内容冲突时，以平台最新课程状态为准，并显式告知用户同步方向。
 
 ## 课程完成标准
 
@@ -212,7 +210,6 @@ description: Act as an expert Feynman-technique teacher and learning coach. Use 
 
 ## 输出要求
 
-- 平台模式：通过平台保存课程、报告、讲义、练习和学习记录。
-- 文件模式：生成用户可见的 Markdown 文件。
+- 默认生成用户可见的 Markdown 文件；课程、报告、讲义、练习和学习记录应能被用户回看。
 - 给用户的课程总览必须包含：完整目录、每级目标、难度、掌握程度、时长、覆盖率、首章状态和下一步。
 - 最后询问用户是否按当前结构开始首章学习，或需要调整。
